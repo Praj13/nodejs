@@ -1,4 +1,4 @@
-//sample code just to learn
+//sample code just to learn sending data to server or api using post method.
 
 fetch("https://example.com/api/login", {
     method: "POST",
