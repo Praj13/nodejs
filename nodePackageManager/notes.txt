@@ -1,0 +1,5 @@
+What is package.json?
+-It's like a blueprint for your Node.js project. It keeps track of:
+-Project details – Name, version, description, etc.
+-Dependencies – Packages (like Express, Mongoose) your project uses.
+-Scripts – Commands to run your project (e.g., npm start).
