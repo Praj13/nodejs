@@ -1,0 +1,9 @@
+The path module in Node.js is a built-in module that helps you work with file and directory paths easily.
+
+🔹 Why Use the path Module?
+✔ Works across different operating systems (Windows uses \, Linux/macOS uses /).
+✔ Makes it easy to handle file paths, extensions, and directory names.
+✔ Helps in resolving absolute and relative paths.
+
+Since it's built into Node.js, you don’t need to install it. Just require it:
+const path = require('path');
