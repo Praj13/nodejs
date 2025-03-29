@@ -1,0 +1,2 @@
+The HTTP module in Node.js allows us to create a server and handle HTTP requests & responses. 
+It is used to build web servers and handle communication between a client (browser) and the server.
