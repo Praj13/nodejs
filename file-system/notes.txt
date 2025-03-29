@@ -1,0 +1,9 @@
+The fs module in Node.js helps you interact with files and folders easily. 
+Always prefer asynchronous methods to keep your app fast and responsive. 🚀
+
+fs.writeFile is a asynchronous syntax.
+fs.writeFileSync is a synchronous syntax.
+
+
+            Synchronous (fs.*Sync())	                                  Asynchronous (fs.*())
+Execution	Blocks execution until operation completes	                  Non-blocking, continues executing other tasks
