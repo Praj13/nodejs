@@ -1,0 +1,9 @@
+async/await is a modern way to handle asynchronous code in JavaScript, 
+making it easier to read and write compared to callbacks or promises.
+
+An async function always returns a promise.
+Inside an async function, you use await to wait for a promise to resolve.
+Error handling is done with try...catch.
+
+
+Since async functions return a promise, calling greet() returns a promise, so we use .then() to log the result.
