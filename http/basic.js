@@ -1,14 +1,14 @@
 const http=require('http');
 const server=http.createServer((req,res)=>{
-    if(req.rul==='/'){
+    if(req.url==='/'){
     res.writeHead(200,{"content-type":"text/plain"});
     res.end("hello world and welcome to home page");
     }
-    if(req.rul==='/about'){
+    if(req.urll==='/about'){
         res.writeHead(200,{"content-type":"text/plain"});
         res.end("welcome to about page");
         }
-        else if(req.rul==='/contact'){
+        else if(req.url==='/contact'){
             res.writeHead(200,{"content-type":"text/plain"});
             res.end("welcome to contact page");
             }
