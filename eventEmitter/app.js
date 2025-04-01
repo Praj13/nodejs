@@ -1,8 +1,8 @@
 const MyEmitter=require('events');
 const emitter=new MyEmitter();
 
-emitter.on('greet',()=>{
-    console.log("event emitter in node js")
+emitter.on('greet',(name)=>{
+    console.log(`hello ${name}`)
 })
 
 emitter.emit('greet');
