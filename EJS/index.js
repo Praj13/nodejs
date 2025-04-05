@@ -32,3 +32,7 @@ app.get('/',(req,res)=>{
 app.get('/about',(req,res)=>{
     res.render('about',{title:'About page'})
 })
+
+app.listen(3000,()=>{
+    console.log("app is running at port 3000");
+})
