@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
-mongoose.connect(
-  "mongodb+srv://rajbansiprajwol:Bx6WKjpPvEzDaC13@cluster0.yvs7cjn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-).then(()=>{console.log("database connected")}).catch((e)=>(console.log(e)))
+require('dotenv').config();
+mongoose.connect(process.env.MONGODB_URI).then(()=>{console.log("database connected")}).catch((e)=>(console.log(e)))
 
 const userSchema=new mongoose.Schema({
     name: String,
