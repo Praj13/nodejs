@@ -25,17 +25,40 @@ async function runQueryExamples() {
         //     }
         // )
 
-        const newUser=new User(
-            {
-                name: "binesh shrestha",
-                email: "haita@gmail.com",
-                age:21,
-                isActive:true,
-                tags: ['developer','designer','ok'],
-            }
-        )
-        await newUser.save();
-        console.log("new user created",newUser)
+        // const newUser=new User(
+        //     {
+        //         name: "binesh shrestha",
+        //         email: "haita@gmail.com",
+        //         age:21,
+        //         isActive:true,
+        //         tags: ['developer','designer','ok'],
+        //     }
+        // )
+
+        // const newUser=new User(
+        //     {
+        //         name: "votey don",
+        //         email: "votey1@gmail.com",
+        //         age:20,
+        //         isActive:true,
+        //         tags: ['designer'],
+        //     }
+        // )
+
+
+        // await newUser.save();
+        // console.log("new user created",newUser)
+
+        // const allUsers= User.find({});
+        // console.log(allUsers);
+
+        // const getUserOfActiveFalse=await User.find({isActive:false})
+        // console.log(getUserOfActiveFalse);
+
+
+        //findOne returns the first found data which matches the given criteria
+        const getVoteyDon=await User.findOne({name:'votey don'})
+        console.log(getVoteyDon);
     }
     catch(e){
         console.log('error=>',e)
