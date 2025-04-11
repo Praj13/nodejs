@@ -1,10 +1,10 @@
 const mongoose=require('mongoose');
-const connectToDB=asycn() => {
+const connectToDB=async()=>{
     try{
         await mongoose.connect()
     }
     catch(error){
         console.log("error connecting",error);
-        process.exit(0);
+        process.exit(1);
     }
 }
