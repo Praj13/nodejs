@@ -1,6 +1,9 @@
 require('dotenv').config();
 const express=require('express');
 const connectToDB=require('./database/db.js');
+const bookRoutes=require('./routes/book-routes')
+
+
 const app=express();
 const PORT=process.env.PORT;
 connectToDB();
