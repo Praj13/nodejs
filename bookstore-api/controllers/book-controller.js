@@ -29,7 +29,30 @@ const getAllBooks = async (req, res) => {
 }
 
 
-const getSingleBookById = async (req, res) => {};
+const getSingleBookById = async (req, res) => {
+    try{
+        const getCurrentBookId=req.params.id;
+        const bookDetailsById= await Book.findById(getCurrentBookId);
+        if(!bookDetailsById){
+            return res.status(404).json({
+                success:false,
+                message:'Book couldnt be found, please try again with different id'
+            })
+        }
+        res.status(201).json({
+            success:true,
+            message:"book found",
+            data:bookDetailsById,
+        })
+    }
+    catch(e){
+        console.log(e)
+        res.status(500).json({
+            success:false,
+            message:'Something went wrong, please try again later'
+        })
+    }
+};
 
 const addNewBook = async (req, res) => {
   try {
