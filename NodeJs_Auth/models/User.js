@@ -1,26 +1,25 @@
 const mongoose=require('mongoose');
-const { TIMESTAMP } = require('mysql/lib/protocol/constants/types');
 
 const UserSchema=mongoose.Schema({
     username:{
-        type:string,
+        type:String,
         required:true,
         unique:true,
         trim:true
     },
     email:{
-        type:string,
+        type:String,
         required:true,
         unique:true,
         trim:true,
         lowercase:true
     },
     password: {
-        type:string,
+        type:String,
         required: true
     },
     role:{
-        type:string,
+        type:String,
         enum:['user','admin'],
         default:'user'
     }
